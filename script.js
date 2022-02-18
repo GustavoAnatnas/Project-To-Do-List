@@ -1,7 +1,8 @@
 //Desafio8, consultei o repositório do Ezequiel Verissimo Tribo 15-B, estava tendo uma linha de pensamento parecida, mas não conseguia executar de forma que funcionasse
 //no caso, adicionei a let seleciona com valor de event.target como ele fez. E mágicamente funcionou.
 // Link Referência : "https://github.com/tryber/sd-015-b-project-todo-list/pull/16/commits/68b309d80bcac16ccbd639c3faf94677e9a4c29d"
-
+//Desafio11, consultei o site da Alura e conheci o remove() que remove o elemento da arvore onde está
+// Link referência : "https://cursos.alura.com.br/forum/topico-excluir-todos-os-elementos-com-uma-classe-159597#:~:text=O%20comando%20document.,desta%20lista%20e%20remov%C3%AA%2Dlos."
 let criaTarefa = document.querySelector('#criar-tarefa');
 let lista = document.querySelector('#lista-tarefas');
 let botaoApaga = document.getElementById('apaga-tudo');
