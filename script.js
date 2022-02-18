@@ -4,7 +4,8 @@
 
 let criaTarefa = document.querySelector('#criar-tarefa');
 let lista = document.querySelector('#lista-tarefas');
-
+let botaoApaga = document.getElementById('apaga-tudo');
+let botaoFinalizados = document.getElementById ('remover-finalizados')
 
 
 function adiciona(){
@@ -18,10 +19,20 @@ function adiciona(){
 }
 
 function apaga(){
-    let lista = document.querySelector('#lista-tarefas');
+    let lista = document.querySelector('#lista-tarefas')
     lista.innerText= '';
 }
-document.getElementById('apaga-tudo').addEventListener('click', apaga)
+// botaoApaga.addEventListener('click', apaga);
+document.getElementById('apaga-tudo').addEventListener('click', apaga);
+
+
+function apagaFinalizados(){
+    let finalizados = document.querySelectorAll('.completed')
+    for (i=0; i < finalizados.length; i++)
+    finalizados[i].remove();
+    
+}
+botaoFinalizados.addEventListener('click', apagaFinalizados)
 
 
 function pintar(event) {
@@ -54,5 +65,4 @@ lista.addEventListener('dblclick', riscaTexto)
 // }
 
 // lista.addEventListener('dblclick', riscaTexto)
-
 
