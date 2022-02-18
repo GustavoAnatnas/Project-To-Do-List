@@ -26,3 +26,19 @@ function pintar(event) {
     seleciona.classList.add('color');
 }
 lista.addEventListener('click', pintar);
+
+function riscaTexto(event) {
+    seleciona = event.target;
+    let riscado = document.querySelectorAll('.li');
+
+    // for (let index = 0; index < riscado.length; index++) {
+    // textoRiscado = riscado[index];
+    if(seleciona.classList.contains('completed')){
+        seleciona.classList.remove('completed')
+    }
+    else{
+        seleciona.classList.add('completed');
+    }
+}
+//}
+lista.addEventListener('dblclick', riscaTexto)
