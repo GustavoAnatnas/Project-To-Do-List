@@ -6,6 +6,7 @@ let criaTarefa = document.querySelector('#criar-tarefa');
 let lista = document.querySelector('#lista-tarefas');
 
 
+
 function adiciona(){
     // id="texto-tarefa" == imput
     // id="lista-tarefas" ==lista
@@ -15,6 +16,14 @@ function adiciona(){
     document.querySelector("#lista-tarefas").innerHTML = lista;
     document.querySelector('#texto-tarefa').value = '';
 }
+
+function apaga(){
+    let lista = document.querySelector('#lista-tarefas');
+    lista.innerText= '';
+}
+document.getElementById('apaga-tudo').addEventListener('click', apaga)
+
+
 function pintar(event) {
     let seleciona = event.target;
     let teste = document.querySelectorAll('.li');
@@ -30,10 +39,6 @@ lista.addEventListener('click', pintar);
 //Soluções para exercicio 9 .58
 function riscaTexto(event) {
     seleciona = event.target;
-    let riscado = document.querySelectorAll('.li');
-
-    // for (let index = 0; index < riscado.length; index++) {
-    // textoRiscado = riscado[index];
     if(seleciona.classList.contains('completed')){
         seleciona.classList.remove('completed')
     }
@@ -41,18 +46,13 @@ function riscaTexto(event) {
         seleciona.classList.add('completed');
     }
 }
-//}
 lista.addEventListener('dblclick', riscaTexto)
 
 // function riscaTexto(event) {
 //     seleciona = event.target;
-//     let riscado = document.querySelectorAll('.li');
-
-//     // for (let index = 0; index < riscado.length; index++) {
-//     // textoRiscado = riscado[index];
-//     event.target.classList.toggle('completed')
+//     seleciona.classList.toggle('completed')
 // }
-// //}
+
 // lista.addEventListener('dblclick', riscaTexto)
 
-//.
+
