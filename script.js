@@ -27,6 +27,7 @@ function pintar(event) {
 }
 lista.addEventListener('click', pintar);
 
+//Soluções para exercicio 9 .58
 function riscaTexto(event) {
     seleciona = event.target;
     let riscado = document.querySelectorAll('.li');
@@ -42,3 +43,16 @@ function riscaTexto(event) {
 }
 //}
 lista.addEventListener('dblclick', riscaTexto)
+
+// function riscaTexto(event) {
+//     seleciona = event.target;
+//     let riscado = document.querySelectorAll('.li');
+
+//     // for (let index = 0; index < riscado.length; index++) {
+//     // textoRiscado = riscado[index];
+//     event.target.classList.toggle('completed')
+// }
+// //}
+// lista.addEventListener('dblclick', riscaTexto)
+
+//.
