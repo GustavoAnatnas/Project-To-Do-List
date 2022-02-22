@@ -1,6 +1,60 @@
+body{
+    background-color: rgb(39, 65, 218);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+#rodape {
+    background-color: rgba(0, 0, 0, 0.904);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+}
+.container{
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: white;
+    padding: 20px;
+    margin: 60px 40px;
+    width: 40%;
+}
 .color {
     background-color: grey;
 }
 .completed{
     text-decoration : line-through solid rgb(0, 0, 0);
 }
+#funcionamento {
+    font-style: italic;
+    color: grey;
+}
+#criar-tarefa{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(39, 65, 218);
+    color: white;
+    padding: 5px;
+}
+#apaga-tudo{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(163, 0, 0);
+    color: white;
+    padding: 5px;
+}
+#remover-finalizados{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(233, 102, 27);
+    color: white;
+    padding: 5px;
+}
+#texto-tarefa{
+    border: 1px solid black;
+    padding: 5px;
+}
+

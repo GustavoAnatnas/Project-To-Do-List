@@ -22,7 +22,7 @@ function adiciona(){
 
 function apaga(){
     let lista = document.querySelector('#lista-tarefas')
-    lista.innerText= '';
+    lista.innerHTML= '';
 }
 // botaoApaga.addEventListener('click', apaga);
 document.getElementById('apaga-tudo').addEventListener('click', apaga);
@@ -42,29 +42,27 @@ function pintar(event) {
     let teste = document.querySelectorAll('.li');
     
     for (let index = 0; index < teste.length; index++) {
-    lis = teste[index];
-    lis.classList.remove('color');
+    teste[index].classList.remove('color');
     }
     seleciona.classList.add('color');
 }
 lista.addEventListener('click', pintar);
 
 //Soluções para exercicio 9 .58
-function riscaTexto(event) {
-    seleciona = event.target;
-    if(seleciona.classList.contains('completed')){
-        seleciona.classList.remove('completed')
-    }
-    else{
-        seleciona.classList.add('completed');
-    }
-}
-lista.addEventListener('dblclick', riscaTexto)
-
 // function riscaTexto(event) {
 //     seleciona = event.target;
-//     seleciona.classList.toggle('completed')
+//     if(seleciona.classList.contains('completed')){
+//         seleciona.classList.remove('completed')
+//     }
+//     else{
+//         seleciona.classList.add('completed');
+//     }
 // }
-
 // lista.addEventListener('dblclick', riscaTexto)
 
+function riscaTexto(event) {
+    seleciona = event.target;
+    seleciona.classList.toggle('completed')
+}
+
+lista.addEventListener('dblclick', riscaTexto)
