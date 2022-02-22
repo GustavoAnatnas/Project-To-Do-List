@@ -8,9 +8,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
+    bottom: 0px;
     left: 0px;
+    position: fixed;
     width: 100%;
     padding: 10px;
 }
@@ -57,4 +57,10 @@ body{
     border: 1px solid black;
     padding: 5px;
 }
+#gif{
+   display: inline-flex;
+   float: right;
+   width: 500px;
+   margin-right: 200px;
 
+}
